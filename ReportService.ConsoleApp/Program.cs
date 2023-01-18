@@ -31,7 +31,7 @@ namespace ReportService.ConsoleApp
 
             return;
             */
-             var emailReciver = "p.rebkowski@gmail.com";
+             var emailReciver = "";
 
 
 
@@ -43,9 +43,9 @@ namespace ReportService.ConsoleApp
                 HostSmtp = "smtp.gmail.com",
                 Port = 587,
                 EnableSsl = true,
-                SenderName = "Przemek Rębkowski",
-                SenderEmail = "skati33@gmail.com",
-                SenderEmailPassword = "ppwfeyjjvrnbjcru"
+                SenderName = "",
+                SenderEmail = "",
+                SenderEmailPassword = ""
             });
 
             var report =   new Report
