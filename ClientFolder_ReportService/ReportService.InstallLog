@@ -49,3 +49,37 @@ Uwzględnione parametry to:
 Usuwanie źródła EventLog ReportService.
 Trwa usuwanie usługi ReportService z systemu...
 Usługa ReportService została pomyślnie usunięta z systemu.
+Instalowanie zestawu 'C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.InstallLog
+   assemblypath = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe
+Trwa instalowanie usługi ReportService...
+Usługa ReportService została zainstalowana pomyślnie.
+Trwa tworzenie źródła EventLog ReportService w dzienniku Application...
+Zatwierdzanie zestawu 'C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.InstallLog
+   assemblypath = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe
+Odinstalowywanie zestawu 'C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.InstallLog
+   assemblypath = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe
+Usuwanie źródła EventLog ReportService.
+Trwa usuwanie usługi ReportService z systemu...
+Usługa ReportService została pomyślnie usunięta z systemu.
+Instalowanie zestawu 'C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.InstallLog
+   assemblypath = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe
+Trwa instalowanie usługi ReportService...
+Usługa ReportService została zainstalowana pomyślnie.
+Trwa tworzenie źródła EventLog ReportService w dzienniku Application...
+Zatwierdzanie zestawu 'C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.InstallLog
+   assemblypath = C:\Users\Przemek\source\repos\ReportService\ClientFolder_ReportService\ReportService.exe

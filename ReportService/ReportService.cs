@@ -18,9 +18,11 @@ namespace ReportService
 {
     public partial class ReportService : ServiceBase
     {
-        private const int SendHour = 8;
-        private const int IntervalInMinutes = 1;
-        private Timer _timer = new Timer(IntervalInMinutes * 60000);
+        //było const dla zmiennych SendHour,IntervalInMinutes
+        private int SendHour;
+        private int IntervalInMinutes;
+        private bool WhetherSendReport;
+        private Timer _timer;// = new Timer(IntervalInMinutes * 60000);
         private ErrorRepository _errorRepository = new ErrorRepository();
         private ReportRepository _reportRepository =  new ReportRepository();
 
@@ -39,6 +41,12 @@ namespace ReportService
             try
             {
                 _emailReciver = ConfigurationManager.AppSettings["EmailReciver"];
+                SendHour = Convert.ToInt32(ConfigurationManager.AppSettings["SendHour"]);
+                IntervalInMinutes = Convert.ToInt32(ConfigurationManager.AppSettings["IntervalInMinutes"]);
+                WhetherSendReport = Convert.ToBoolean(ConfigurationManager.AppSettings["WhetherSendReport"]);
+
+                _timer = new Timer(IntervalInMinutes * 60000);
+
 
 
 
@@ -47,7 +55,7 @@ namespace ReportService
                     HostSmtp = ConfigurationManager.AppSettings["HostSmtp"],
                     Port = Convert.ToInt32(ConfigurationManager.AppSettings["Port"]),
                     EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]),
-                    SenderName = ConfigurationManager.AppSettings["SenderEmail"],
+                    SenderName = ConfigurationManager.AppSettings["SenderName"],
                     SenderEmail = ConfigurationManager.AppSettings["SenderEmail"],
                     SenderEmailPassword = DecryptSenderEmailPassword()
                     //_stringCipher.Decrypt(ConfigurationManager.AppSettings["SenderEmailPassword"])
@@ -93,7 +101,8 @@ namespace ReportService
             try
             {
                 await SendError();
-                await SendReport();
+                if(WhetherSendReport == true)
+                    await SendReport();
             }
             catch(Exception ex)
             {
